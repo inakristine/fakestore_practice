@@ -1,0 +1,18 @@
+.header{
+    background-color: black;
+    border: white solid 2px;
+    height: 120px;
+    z-index: 200;
+    &__title{
+        position: absolute;
+        left: 35px;
+        top: 33px;
+        text-shadow: 2px 2px 6px rgba(0,0,0,1);
+    }
+    &__cartimage{
+        width: 70px;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+}

@@ -1,0 +1,27 @@
+.frontpage{
+    height: 60vw;
+    &__carousel{
+        width: 33.31vw;
+        border: 2px solid  white;
+        float: left;
+        z-index: -4;
+    }
+    &__shade{
+        width: 33.32vw;
+            height: 33.31vw;
+            border: solid 2px white;
+            z-index: 20;
+            position: absolute;
+            top: 240px;
+        &--right{
+            @extend .frontpage__shade;
+            background: linear-gradient(90deg, rgba(0,0,0,0.9), rgba(0,0,0,0.1));
+            left: 0;
+        }
+        &--left{
+            @extend .frontpage__shade;
+            background: linear-gradient(-90deg, rgba(0,0,0,0.9), rgba(0,0,0,0.1));
+            right: 0;
+        }
+    }
+}

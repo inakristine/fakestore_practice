@@ -1,0 +1,95 @@
+@import "./colors";
+
+.menu{
+    width: 100%;
+    height: 120px;
+    border-color: white;
+    border-style: solid;
+    border-width: 0 2px 0 2px;
+    &__menulink{
+        width: 22vw;
+        height: 80px;
+        text-align: center;
+        padding-top: 23px;
+        position: absolute;
+        top: 140px;
+        z-index: 100;
+        &--link1{
+            @extend .menu__menulink;
+            left: 3vw;
+        }
+        &--link2{
+            @extend .menu__menulink;
+            left: 27vw;
+        }
+        &--link3{
+            @extend .menu__menulink;
+            left: 51vw;
+        }
+        &--link4{
+            @extend .menu__menulink;
+            left: 75vw;
+        }
+    }
+    &__menutext{
+        font-size: 1.9vw;
+        color: white;
+        font-weight: 300;
+    }
+    &__decorstrip{
+        border: solid $pinkFlat;
+        border-width: 2px 0 2px 0;
+        position: absolute;
+        width: 100%;
+        height: 60px;
+        background-color: rgba(0,0,0,0.8);
+        top: 150px;
+        left: 0;
+        z-index: 0;
+    }
+    &__decorblock{
+        width: 22vw;
+        height: 80px;
+        background-color: white;
+        border: 2px solid black;
+        float: left;
+        &--item1{
+            @extend .menu__decorblock;
+        margin: 20px 1vw 20px 3vw;
+        }
+        &--item2{
+            @extend .menu__decorblock;
+            margin: 20px 1vw 20px 1vw;
+        }
+        &--item3{
+            @extend .menu__decorblock;
+            margin: 20px 1vw 20px 1vw;
+        }
+        &--item4{
+            @extend .menu__decorblock;
+            margin: 20px 1vw 20px 1vw;
+        }
+    }
+    &__decorsquare{
+        border: solid white;
+        position: absolute;
+        top: 120px;
+        z-index: -3;
+        &--pink{
+            @extend .menu__decorsquare;
+            border-width: 0 2px 0 2px;
+            width: 120px;
+            height: 120px;
+            background: $pinkGradient;
+            left: 0;
+        }
+        &--yellow{
+            @extend .menu__decorsquare;
+            border-width: 0 2px 2px 0 ;
+            width: 60px;
+            height: 60px;
+            background: $yellowGradient;
+            left: 120px;
+        }
+    }
+}

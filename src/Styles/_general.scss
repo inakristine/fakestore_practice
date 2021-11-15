@@ -1,0 +1,26 @@
+@import url("https://use.typekit.net/kno8btu.css");
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import "./colors";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    background: $turqouiseGradient;
+}
+
+h1{
+    font-family: 'Poiret One', cursive;
+    font-size: 6em;
+    color: $turqouiseFlat;
+}
+h2{
+    font-family: multi-display,sans-serif;
+}
+
+p{
+    font-family: multi-display,sans-serif;
+}
