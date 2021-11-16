@@ -17,6 +17,9 @@ function Header() {
         <Link to="/cart">
         <img className="header__cartimage" src={cartImg} alt="cart"/>
         </Link>
+        <div className="header__cartcounter">
+        <p className="header__cartnumber">0</p>
+        </div>
 
         </header>
       </div>

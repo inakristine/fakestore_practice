@@ -2,10 +2,10 @@ import React from "react";
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import img1 from "../img/squareArtboard-1.png";
-import img2 from "../img/squareArtboard-2.png";
-import img3 from "../img/squareArtboard-3.png";
-import img4 from "../img/squareArtboard-4.png";
+import img1 from "../img/carousel-Img1.png";
+import img2 from "../img/carousel-Img2.png";
+import img3 from "../img/carousel-Img3.png";
+import img4 from "../img/carousel-Img4.png";
 
 
 function Carusel() {

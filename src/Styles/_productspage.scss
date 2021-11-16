@@ -1,0 +1,100 @@
+.product{
+    min-height: fit-content;
+    border: solid white;
+    border-width: 0 2px 0 2px;
+    &__title{
+        font-size: 3em;
+        color: black;
+        position: absolute;
+        top: 225px;
+        right: 3vw;
+    }
+    &__grid{
+        margin: 3vw;
+        display: grid;
+        grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+        column-gap: 2%;
+        row-gap: 2vw;
+    }
+    &__card{
+        height: 35vw;
+        background-color: white;
+        border: 2px solid black;
+        z-index: 100;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    &__cardtitle{
+        font-size: 1.8vw;
+        padding:  10px 10px 0 10px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    &__cardimage{
+        margin: 2% 15%;
+        width: 70%;
+        height: fit-content;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    &__cardprice{
+        background: $yellowGradient;
+        border: solid black;
+        border-width: 2px 2px 0 0;
+        padding: 5px;
+        min-height: fit-content;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        text-align: center;
+        &--number{
+            font-size: 1.8vw;
+            margin-top: -4px;
+        }
+    }
+    &__cardrate{
+        background: $yellowGradient;
+        min-height: fit-content;
+        border: solid black;
+        border-width: 2px 0 0 0;
+        padding: 5px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        text-align: center;
+        &--number{
+            font-size: 1.2vw;
+            margin-top: 4;
+            margin-bottom: 4;
+        }
+    }
+    &__button{
+        background: $pinkGradient;
+        text-decoration: none;
+        min-height: fit-content;
+        width: 100%;
+        border: solid black;
+        border-width: 2px 0 0 0;
+        padding: 5px;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        text-align: center;
+        color: black;
+        :hover{
+            color: white;
+        }
+    }
+    &__buttontext{
+        font-size: 1.8vw;
+        margin-top: -4px;
+    }
+    
+}

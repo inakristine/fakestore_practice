@@ -1,10 +1,21 @@
 import React from "react";
-
+import Productcard from "./productcard";
 
 function Products() {
   return (
-    <div className="productspage">
-    <h1>products</h1>
+    <div className="product">
+    <h1 className="product__title">products</h1>
+    <div className="product__grid">
+    <Productcard/>
+    <Productcard/>
+    <Productcard/>
+    <Productcard/>
+    <Productcard/>
+    <Productcard/>
+    <Productcard/>
+    <Productcard/>
+    <Productcard/>
+    </div>
 
 
 
