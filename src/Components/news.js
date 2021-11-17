@@ -4,18 +4,16 @@ import Newscard from "./newscard";
 function News() {
   return (
     <div className="news">
+      <Newscard />
+      <Newscard />
+      <Newscard />
+      <Newscard />
 
-    <Newscard/>
-    <Newscard/>
-    <Newscard/>
-    <Newscard/>
+      <div className="news__title">
+        <p className="news__newstext">News • News • News • News • News • News • News • News • News • News • News • News • News • </p>
+      </div>
 
-    <div className="news__title">
-    <p className="news__newstext">News</p>
-    </div>
-
-    <div className="news__decorstrip"></div>
-
+      <div className="news__decorstrip"></div>
     </div>
   );
 }

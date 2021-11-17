@@ -10,6 +10,7 @@ import Productspecificpage from "./Components/productspecific-page";
 
 
 function App() {
+  
   return (
     <div className="App">
       <Router>
@@ -17,7 +18,10 @@ function App() {
         <Menu/>
         <Routes>
         <Route path='/cart' element={<Cart/>} />
-        <Route path='/products' element={<Products/>} />
+        <Route path="/products/:man" element={<Products/>} />
+        <Route path="/products/:woman" element={<Products/>} />
+        <Route path="/products/:jewels" element={<Products/>} />
+        <Route path="/products/:electro" element={<Products/>} />
         <Route path='/' element={<Frontpage/>} />
         <Route path='/productspecificpage/:id' element={<Productspecificpage/>} />
         </Routes>
