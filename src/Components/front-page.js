@@ -2,6 +2,7 @@ import React from "react";
 import Carusel from "./carusel";
 import News from "./news";
 
+
 function Frontpage() {
   return (
     <div className="frontpage">
